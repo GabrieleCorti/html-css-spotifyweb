@@ -116,5 +116,26 @@ svg {
     cursor: pointer;
     padding-bottom: 20px;
 }
+/*main*/
+/*navbar*/
+.genere_list {
+    width: 60%;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.current_genere {
+    color: white;
+}
 
+.current_genere::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    background-color: #7CB721;
+}
