@@ -205,6 +205,22 @@ svg {
     padding: 10px 0;
 }
 
+.phone_menu {
+    display: none;
+    height: 100%;
+}
+
+.phone_nav_logo, .phone_install_logo, .phone_profile_logo {
+    width: 43%;
+    margin: 5px 0;
+}
+
+.phone_nav_primary, .phone_area_profilo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .btn_action:hover, .new_playlist:hover {
     color: rgba( 255, 255, 255, 1);
 }
@@ -219,4 +235,28 @@ svg {
 
 .installa_action:hover {
     color: rgba( 255, 255, 255, 1);
+}
+
+@media screen and (max-width: 576px) {
+    #aside {
+        width: 50px;
+    }
+
+    .phone_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo, .nav_primary, .playlist, .playlist_overfow, .area_profilo {
+        display: none;
+    }
+
+    #main-content {
+        width: calc(100% - 50px);
+    }
+
+
+
 }
