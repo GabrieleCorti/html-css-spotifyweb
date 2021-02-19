@@ -54,6 +54,10 @@ main {
 .btn_action span {
     font-size: 20px;
 }
+
+.profile_name {
+    font-weight: bold;
+}
 /*button*/
 .btn_action {
     background-color: transparent;
@@ -176,6 +180,7 @@ svg {
 
 .area_profilo {
     padding: 20px;
+    margin-top: auto;
 }
 
 .area_profilo hr {
@@ -198,4 +203,20 @@ svg {
 
 .installa, .profile {
     padding: 10px 0;
+}
+
+.btn_action:hover, .new_playlist:hover {
+    color: rgba( 255, 255, 255, 1);
+}
+
+.new_playlist:hover.logo_button {
+    background-color: rgba( 255, 255, 255, 1);
+}
+
+.playlist_link:hover {
+    color: rgba( 255, 255, 255, 1);
+}
+
+.installa_action:hover {
+    color: rgba( 255, 255, 255, 1);
 }
