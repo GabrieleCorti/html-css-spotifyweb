@@ -27,7 +27,7 @@ body {
 }
 /*section*/
 main {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     display: flex;
 }
 
@@ -47,8 +47,11 @@ main {
 }
 
 #player {
-    height: 70px;
+    min-height: 80px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*typo*/
 .btn_action span {
@@ -57,6 +60,14 @@ main {
 
 .profile_name {
     font-weight: bold;
+}
+
+.album_name span {
+    font-weight: bold;
+}
+
+.album_name span, .album_song span {
+    font-size: 11px;
 }
 /*button*/
 .btn_action {
@@ -139,10 +150,7 @@ svg {
     width: 30px;
     font-size: 17px;
     margin-right: 10px;
-
 }
-
-
 /*main*/
 /*navbar*/
 .genere_list {
@@ -245,7 +253,7 @@ svg {
 .installa_action:hover {
     color: rgba( 255, 255, 255, 1);
 }
-
+/*mediaqueri di aside*/
 @media screen and (max-width: 576px) {
     #aside {
         width: 50px;
@@ -264,7 +272,108 @@ svg {
     #main-content {
         width: calc(100% - 50px);
     }
+}
+/*footer*/
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currentplaying, .album_info, .like_save_action {
+    display: flex;
+    align-items: center;
+}
+/*current*/
+.currentplaying {
+    flex-basis: 14%;
+    padding-left: 20px;
+
+}
 
 
+.album_cover {
+    width: 20%;
+    margin-right: 10px;
+}
 
+.album_cover img {
+    width: 100%;
+}
+
+.do_logo {
+    margin: 0 5px;
+    padding: 0;
+    color: rgba(255,255, 255, 0.7);
+    font-size: 13px;
+}
+/*mixer*/
+.player_dashboard {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.player_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin: auto auto 10px;
+}
+
+.mixer {
+    padding: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.bigger {
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_runtime {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.timeline {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.music_volume {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 12%;
+}
+
+.vol_logo {
+    color: white;
+    padding: 0px;
+    margin: 5px;
+}
+
+.vol_line {
+    width: 100px;
+}
+
+.vol_section {
+    display: flex;
+    align-items: center;
 }
