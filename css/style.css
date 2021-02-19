@@ -215,10 +215,19 @@ svg {
     margin: 5px 0;
 }
 
-.phone_nav_primary, .phone_area_profilo {
+.phone_nav_primary, .phone_area_profilo, .phone_logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.phone_logo {
+    width: 55%;
+    margin: 15px 0 10px 0;
+}
+
+.phone_area_profilo {
+    margin-top: auto;
 }
 
 .btn_action:hover, .new_playlist:hover {
@@ -245,7 +254,6 @@ svg {
     .phone_menu {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
     }
 
