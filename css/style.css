@@ -100,6 +100,10 @@ svg {
     margin-bottom: 15px;
 }
 /*menu*/
+.nav_primary, .playlist, .area_profilo {
+    overflow: hidden;
+}
+
 .nav_logo svg {
     width: 100%;
     fill: white;
@@ -273,14 +277,16 @@ svg {
 .player {
     justify-content: space-between;
 }
-
 /*current*/
 .currentplaying {
-    flex-basis: 14%;
+    max-width: 200px;
     padding-left: 20px;
-
+    justify-content: space-between;
 }
 
+.album_info {
+    flex-basis: 60%;
+}
 
 .album_cover {
     width: 20%;
@@ -355,3 +361,25 @@ svg {
     width: 100px;
 }
 
+@media screen and (max-width:720px) {
+    .player_button {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #player {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .currentplaying, .music_volume {
+        flex-basis: 50%;
+    }
+
+    .player_dashboard {
+        flex-basis: 80%;
+        order: -1;
+        margin: 10px 0;
+    }
+}
