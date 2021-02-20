@@ -25,10 +25,18 @@ a {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+}
 /*section*/
 main {
     height: calc(100vh - 80px);
-    display: flex;
 }
 
 #aside {
@@ -49,9 +57,7 @@ main {
 #player {
     min-height: 80px;
     background-color: #282828;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 /*typo*/
 .btn_action span {
@@ -158,7 +164,6 @@ svg {
     margin: auto;
     text-transform: uppercase;
     padding: 40px 0;
-    display: flex;
     justify-content: space-evenly;
 }
 
@@ -175,15 +180,11 @@ svg {
     background-color: #7CB721;
 }
 /*installa*/
-.installa {
-    display: flex;
-    align-items: center;
-}
-
 .install_logo {
     width: 12%;
     margin-right: 15px;
-    display: flex;
+    position: relative;
+    right: 4px;
 }
 
 .area_profilo {
@@ -193,11 +194,6 @@ svg {
 
 .area_profilo hr {
     background-color: white;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
 }
 
 .profile_logo {
@@ -275,15 +271,9 @@ svg {
 }
 /*footer*/
 .player {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.currentplaying, .album_info, .like_save_action {
-    display: flex;
-    align-items: center;
-}
 /*current*/
 .currentplaying {
     flex-basis: 14%;
@@ -315,9 +305,7 @@ svg {
 }
 
 .player_button {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 40%;
     margin: auto auto 10px;
 }
@@ -334,14 +322,10 @@ svg {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .player_runtime {
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -357,15 +341,13 @@ svg {
 }
 
 .music_volume {
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
     flex-basis: 12%;
 }
 
 .vol_logo {
     color: white;
-    padding: 0px;
+    padding: 0;
     margin: 5px;
 }
 
@@ -373,7 +355,3 @@ svg {
     width: 100px;
 }
 
-.vol_section {
-    display: flex;
-    align-items: center;
-}
