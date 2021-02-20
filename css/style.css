@@ -97,12 +97,12 @@ svg {
 
 .nav_primary_link, .playlist_link {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 /*menu*/
-.nav_primary, .playlist, .area_profilo {
+/*.nav_primary, .playlist, .area_profilo {
     overflow: hidden;
-}
+}*/
 
 .nav_logo svg {
     width: 100%;
@@ -160,6 +160,12 @@ svg {
     width: 30px;
     font-size: 17px;
     margin-right: 10px;
+}
+
+@media screen and (max-height: 520px){
+    #aside {
+        overflow: hidden;
+    }
 }
 /*main*/
 /*navbar*/
