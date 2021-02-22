@@ -179,6 +179,8 @@ svg {
     justify-content: space-evenly;
     font-size: 14px;
     flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
 }
 
 .genere_list li {
@@ -197,7 +199,7 @@ svg {
     margin: auto;
     background-color: #7CB721;
 }
-
+/*main container*/
 .main_container {
     padding: 0 20px;
 }
@@ -205,10 +207,7 @@ svg {
 .allalbum {
     display: flex;
     flex-wrap: wrap;
-}
-
-h2 {
-    padding-bottom: 25px;
+    padding: 25px 0 30px;
 }
 
 h3 {
@@ -216,19 +215,80 @@ h3 {
 }
 
 .allalbum_album {
-    flex-basis: 15%;
+    width: 12%;
+    padding-bottom: 15px;
 }
 
 .allalbum_album:not(:last-child) {
-    margin-right: 2%;
+    margin-right: 4%;
+}
+
+.allalbum_cover {
+    width: 100%;
+    position: relative;
+}
+
+.allalbum_cover:hover .overlay {
+    visibility: visible;
+    opacity: 0.2;
+}
+
+.allalbum_cover:hover .play_hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: visibility 0s, opacity 0.4s linear;
+}
+
+.play_hover {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px;
+    transition: visibility 0s, opacity 0.4s linear;
 }
 
 .allalbum_cover img {
     width: 100%;
+    display: inherit;
 }
 
 .allalbum_info {
     text-align: center;
+}
+
+.createfor p {
+    padding-top: 10px;
+}
+
+.round {
+    overflow: hidden;
+    border-radius: 50%;
+}
+/*media di allalbum*/
+@media screen and (max-width: 920px){
+    .allalbum_album {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .allalbum_album {
+        width: 46%;
+    }
 }
 /*installa*/
 .install_logo {
@@ -376,6 +436,11 @@ h3 {
     width: 24px;
     height: 24px;
     justify-content: center;
+}
+
+.fa-play {
+    position: relative;
+    left: 1px;
 }
 
 .player_runtime {
