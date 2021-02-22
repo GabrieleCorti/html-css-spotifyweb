@@ -88,6 +88,29 @@ small {
     cursor: pointer;
     padding-bottom: 20px;
 }
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.addplaylist::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    font-weight: 900;
+}
 /*aside*/
 .logo {
     max-width: 75%;
@@ -104,10 +127,6 @@ svg {
     margin-bottom: 10px;
 }
 /*menu*/
-/*.nav_primary, .playlist, .area_profilo {
-    overflow: hidden;
-}*/
-
 .nav_logo svg {
     width: 100%;
     fill: white;
@@ -194,7 +213,7 @@ svg {
 .current_genere::after {
     content: "";
     display: block;
-    width: 20px;
+    width: 31px;
     height: 2px;
     margin: auto;
     background-color: #7CB721;
@@ -217,6 +236,7 @@ h3 {
 .allalbum_album {
     width: 12%;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .allalbum_album:not(:last-child) {
