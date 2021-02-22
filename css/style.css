@@ -170,11 +170,15 @@ svg {
 /*main*/
 /*navbar*/
 .genere_list {
-    width: 60%;
-    margin: auto;
     text-transform: uppercase;
-    padding: 40px 0;
+    padding: 25px 0;
     justify-content: space-evenly;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.genere_list li {
+    padding: 15px;
 }
 
 .current_genere {
@@ -313,12 +317,12 @@ svg {
 .player_dashboard {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 .player_button {
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
     margin: auto auto 10px;
 }
 
