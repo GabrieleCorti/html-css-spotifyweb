@@ -59,6 +59,12 @@ main {
     background-color: #282828;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 576px){
+    main {
+        height: calc(100vh - 107px);
+    }
+}
 /*typo*/
 .btn_action span {
     font-size: 20px;
