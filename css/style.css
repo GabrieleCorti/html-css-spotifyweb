@@ -75,6 +75,10 @@ main {
 .album_name span, .album_song span {
     font-size: 11px;
 }
+
+small {
+    opacity: 0.5;
+}
 /*button*/
 .btn_action {
     background-color: transparent;
@@ -192,6 +196,39 @@ svg {
     height: 2px;
     margin: auto;
     background-color: #7CB721;
+}
+
+.main_container {
+    padding: 0 20px;
+}
+
+.allalbum {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    padding-bottom: 25px;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+.allalbum_album {
+    flex-basis: 15%;
+}
+
+.allalbum_album:not(:last-child) {
+    margin-right: 2%;
+}
+
+.allalbum_cover img {
+    width: 100%;
+}
+
+.allalbum_info {
+    text-align: center;
 }
 /*installa*/
 .install_logo {
